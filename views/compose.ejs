@@ -4,15 +4,19 @@
 
 <form class="item" action="/" method="post">
   <div class="form-group form-group-lg">
+
     <label class="control-label" >Title</label>
-    <input type="text" class="col-sm-12" name="newComposeItemTitle" placeholder="Enter Title" autocomplete="off" required autofocus>
+    <input type="text" class="form-control col-sm-12" name="newComposeItemTitle" placeholder="Enter Title" autocomplete="off" required autofocus>
   </div>
-  <p></p>
+
   <div class="form-group form-group-lg">
     <label class="control-label">Post</label>
-    <input type="text" id="textboxid" class="col-sm-12"  name="newComposeItemBody" placeholder="Enter Your Text" autocomplete="off" required autofocus>  
+    <input type="text" id="textboxid" class="form-control col-sm-12"  name="newComposeItemBody" placeholder="Enter Your Text" autocomplete="off" required autofocus>  
+    <!-- another option instead of css formatting textboxid class
+         <textarea name="Text1" cols="40" rows="5"></textarea> 
+    -->
   </div>
-  <div class="form-group form-group-lg">
+  <div class="myButton">
     <button type="submit" class="myButton btn btn-primary btn-lg" name="button" >Publish</button>
   </div>
 </form>
