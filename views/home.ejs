@@ -3,5 +3,24 @@
 <h1>Home</h1>
 
 <p><%= homeContent %></p>
-  
-<%- include('partials/footer'); -%>
+
+
+    <% newPosts.forEach(function(newPost) { %>
+      <div class="item">
+        <h1><%= newPost.title %></h1>
+        <p><%= newPost.content %></p>        
+      </div>
+    <% }); %>
+<!--
+    <%- include('partials/footer'); -%>
+    -->
+<!--
+    <% for (var i=0; i<newPosts.length; i++) { %>
+      <div class="item">
+        <p><%= newPosts[i].title %></p>
+        <p><%= newPosts[i].content %></p>        
+      </div>
+    <% } %>
+-->
+
+
