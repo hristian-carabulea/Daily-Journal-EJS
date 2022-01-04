@@ -1,18 +1,24 @@
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: red;
+  background-color: #1abc9c;
 }
+.nav-link {
+  color: #070707;
+}
+
 .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: #ffffff !important;
 }
 
 .footer-padding {
@@ -29,7 +35,24 @@
 }
 
 .footer p {
-	margin-top: 25px;
-	font-size: 12px;
+  margin-top: 25px;
+  font-size: 12px;
   color: #fff;
+}
+
+#textboxid
+{
+    height:200px;
+    font-size:14pt;
+}
+
+.control-label {
+  font-size: large;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.myButton {
+  margin-top: 20px;
+  margin-bottom: 6px;
 }
