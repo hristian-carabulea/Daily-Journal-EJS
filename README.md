@@ -7,13 +7,19 @@
 ### npm -i if package.json present.
 ## Usage
 ### See journal entries at http://localhost:3000/
-### Make new entries at http://localhost:3000/compose
-
+#
 ** Resources Links **
+
 https://www.npmjs.com/
+
 https://nodejs.org/en/
+
 https://expressjs.com/
+
 https://www.npmjs.com/package/body-parser
+
 https://ejs.co/
+
 https://lodash.com/
+
 https://www.lipsum.com/feed/html
