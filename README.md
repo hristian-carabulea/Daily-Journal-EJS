@@ -6,7 +6,7 @@
 ## ** OR **
 ### npm -i if package.json present.
 ## Usage
-### See journal entries at http://localhost:3000/
+### nodemon app.js, and see journal entries at http://localhost:3000/
 #
 ** Resources Links **
 
