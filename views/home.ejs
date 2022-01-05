@@ -4,23 +4,14 @@
 
 <p><%= homeContent %></p>
 
+<% newPosts.forEach(function(newPost) { %>
+  <div class="item">
+    <h1><%= newPost.title %></h1>
+    <p>
+      <%= newPost.content.substring(0,100) + " ..." %>
+      <a href="/posts/<%=newPost.title%>">Read More</a>
+    </p>
+  </div>
+<% }); %>
 
-    <% newPosts.forEach(function(newPost) { %>
-      <div class="item">
-        <h1><%= newPost.title %></h1>
-        <p><%= newPost.content %></p>        
-      </div>
-    <% }); %>
-<!--
-    <%- include('partials/footer'); -%>
-    -->
-<!--
-    <% for (var i=0; i<newPosts.length; i++) { %>
-      <div class="item">
-        <p><%= newPosts[i].title %></p>
-        <p><%= newPosts[i].content %></p>        
-      </div>
-    <% } %>
--->
-
-
+<%- include('partials/footer'); -%>
