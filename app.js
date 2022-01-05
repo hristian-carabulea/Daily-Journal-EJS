@@ -1,4 +1,3 @@
-//jshint esversion:6
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -16,7 +15,40 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+// Load the core build.
+var _ = require("lodash");
+
 let posts = [];
+
+// To test e.g. challenge 18:
+// 1. go to http://localhost:3000/compose, and make two entries: Title 1, title3
+// 2. Go to http://localhost:3000/posts/title1, http://localhost:3000/posts/Title2, http://localhost:3000/posts/Title3
+function findPostName (postName) {
+  let found = false;
+  
+  postName = _.lowerCase(postName);
+
+  for (var i=0; i<posts.length; i++) {
+    let postTitle = _.lowerCase(posts[i].title);
+    
+    if ((postName === postTitle) && !found) {
+      console.log ("Post title '" + postName + "' found.");
+      found = true;
+    }
+  }
+  
+  if (!found) {
+    console.log ("Post title '" + postName + "' not found.");
+  }
+}
+
+app.get("/posts/:postName", function(req,res){ // challenge 16, use express routing to pic any topic under /posts/:topic
+  // console.log(req.params.postName); // get dynamic URL
+  // console.log(req.params); // display all params
+
+  findPostName(req.params.postName);
+
+});
 
 app.get("/", function (req, res) {
   let year = date("year");
@@ -46,6 +78,8 @@ app.post("/compose", function(req, res){
   };
   let year = date("year");
   posts.push(post);
+  // console.log(post);
+    
   res.redirect("/");
 
 });
