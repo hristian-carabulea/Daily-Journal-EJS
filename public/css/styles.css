@@ -2,6 +2,7 @@
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
 .navbar {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -10,15 +11,15 @@
   margin-bottom: 0;
   font-size: 14px;
   letter-spacing: 3px;
-  color: red;
   background-color: #1abc9c;
 }
+
 .nav-link {
   color: #070707;
 }
 
-.navbar-nav  li a:hover {
-    color: #ffffff !important;
+a:hover {
+    color: #b10303 !important;
 }
 
 .footer-padding {
@@ -31,6 +32,7 @@
 	width: 100%;
 	height: 60px;
   margin-top: 20px;
+
 	background-color: #1abc9c;
 }
 
